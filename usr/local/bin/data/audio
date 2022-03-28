@@ -9,7 +9,8 @@ tput setaf 1
 echo "###############################################################################"
 echo "#                       XeroLinux Audio Driver Switcher                       #"
 echo "#                                                                             #"
-echo "#                This Will Allow You To Switch Audio Driver                   #"
+echo "#                Having Audio Issues With Included Drivers?                   #"
+echo "#    This Script Will Allow You To Switch.. Answer with 'y' When Prompted.    #"
 echo "###############################################################################"
 tput sgr0
 echo
@@ -31,11 +32,7 @@ case $CHOICE in
       echo "##########################################"
       echo "      Replacing PipeWire with Pulse       "
       echo "##########################################"
-			systemctl --user disable --now pipewire pipewire-pulse pipewire-media-session
-
-			sudo pacman -Rdd --noconfirm gst-plugin-pipewire pipewire-{alsa,jack,media-session,pulse,zeroconf}
-
-            sudo pacman -S alsa-firmware pavucontrol-qt paprefs python-pulsectl pulseaudio-{bluetooth,alsa,equalizer-ladspa,jack,qt,zeroconf}
+			sudo pacman -S pulseaudio-support pulseaudio-bluetooth
       echo "#######################################"
       echo "          All Done, Rebooting          "
       echo "#######################################"
@@ -48,11 +45,7 @@ case $CHOICE in
       echo "##########################################"
       echo "      Replacing Pulse with PipeWire       "
       echo "##########################################"
-			sudo pacman -Rdd --noconfirm alsa-firmware pavucontrol-qt paprefs python-pulsectl pulseaudio-{bluetooth,alsa,equalizer-ladspa,jack,qt,zeroconf}
-
-            sudo pacman -S --needed gst-plugin-pipewire pipewire-{alsa,jack,media-session,pulse,zeroconf}
-
-            systemctl --user enable --now pipewire pipewire-pulse pipewire-media-session
+			sudo pacman -S pipewire-support
       echo "#######################################"
       echo "          All Done, Rebooting          "
       echo "#######################################"
