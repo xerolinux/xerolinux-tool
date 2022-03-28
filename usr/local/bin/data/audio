@@ -13,11 +13,11 @@ echo "#                This Will Allow You To Switch Audio Driver               
 echo "###############################################################################"
 tput sgr0
 echo
-echo "Select an Option..."
+echo "Hey there, So What Shall We Do ?"
 echo
-echo "0.  Do nothing"
 echo "1.  Replace Pulse With PipeWire"
 echo "2.  Replace PipeWire With Pulse"
+echo "3.  Nothing/Exit"
 echo
 echo "Type the number..."
 echo
@@ -25,14 +25,6 @@ echo
 read CHOICE
 
 case $CHOICE in
-
-    0 )
-      echo
-      echo "########################################"
-      echo "   We did nothing as per your request   "
-      echo "########################################"
-      echo
-      ;;
 
     1 )
       echo
@@ -66,6 +58,14 @@ case $CHOICE in
       echo "#######################################"
             sleep 3
 			reboot
+      ;;
+
+    3 )
+      echo
+      echo "########################################"
+      echo "   We did nothing as per your request   "
+      echo "########################################"
+      echo
       ;;
 
     * )

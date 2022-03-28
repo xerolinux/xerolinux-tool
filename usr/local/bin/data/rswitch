@@ -20,13 +20,13 @@ tput sgr0
 echo
 echo "Select a Rice to Apply"
 echo
-echo "0.  Do nothing"
 echo "1.  Apply Xero Cherry"
 echo "2.  Apply Xero Layan"
 echo "3.  Apply Xero Nord"
 echo "4.  Apply Xero Sweet"
 echo "5.  Apply Xero Dracul"
 echo "6.  Uninstall All Rices."
+echo "7.  Nothing/Exit"
 echo
 echo "Type the number..."
 echo
@@ -34,14 +34,6 @@ echo
 read CHOICE
 
 case $CHOICE in
-
-    0 )
-      echo
-      echo "########################################"
-      echo "   We did nothing as per your request   "
-      echo "########################################"
-      echo
-      ;;
 
     1 )
       echo
@@ -162,6 +154,15 @@ case $CHOICE in
        echo "#######################################"
             sleep 3
 			reboot
+      ;;
+
+
+    7 )
+      echo
+      echo "########################################"
+      echo "   We did nothing as per your request   "
+      echo "########################################"
+      echo
       ;;
 
     * )
