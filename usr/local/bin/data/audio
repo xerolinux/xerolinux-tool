@@ -15,8 +15,8 @@ tput sgr0
 echo
 echo "Hey there, So What Shall We Do ?"
 echo
-echo "1.  Replace Pulse With PipeWire"
-echo "2.  Replace PipeWire With Pulse"
+echo "1.  Replace PipeWire With Pulse"
+echo "2.  Replace Pulse With PipeWire"
 echo "3.  Nothing/Exit"
 echo
 echo "Type the number..."
@@ -29,13 +29,13 @@ case $CHOICE in
     1 )
       echo
       echo "##########################################"
-      echo "      Replacing Pulse with PipeWire       "
+      echo "      Replacing PipeWire with Pulse       "
       echo "##########################################"
-			sudo pacman -Rdd --noconfirm alsa-firmware pavucontrol-qt paprefs python-pulsectl pulseaudio-{bluetooth,alsa,equalizer-ladspa,jack,qt,zeroconf}
+			systemctl --user disable --now pipewire pipewire-pulse pipewire-media-session
 
-            sudo pacman -S --needed gst-plugin-pipewire pipewire-{alsa,jack,media-session,pulse,zeroconf}
+			sudo pacman -Rdd --noconfirm gst-plugin-pipewire pipewire-{alsa,jack,media-session,pulse,zeroconf}
 
-            systemctl --user enable --now pipewire pipewire-pulse pipewire-media-session
+            sudo pacman -S alsa-firmware pavucontrol-qt paprefs python-pulsectl pulseaudio-{bluetooth,alsa,equalizer-ladspa,jack,qt,zeroconf}
       echo "#######################################"
       echo "          All Done, Rebooting          "
       echo "#######################################"
@@ -46,13 +46,13 @@ case $CHOICE in
     2 )
       echo
       echo "##########################################"
-      echo "      Replacing PipeWire with Pulse       "
+      echo "      Replacing Pulse with PipeWire       "
       echo "##########################################"
-			systemctl --user disable --now pipewire pipewire-pulse pipewire-media-session
+			sudo pacman -Rdd --noconfirm alsa-firmware pavucontrol-qt paprefs python-pulsectl pulseaudio-{bluetooth,alsa,equalizer-ladspa,jack,qt,zeroconf}
 
-			sudo pacman -Rdd --noconfirm gst-plugin-pipewire pipewire-{alsa,jack,media-session,pulse,zeroconf}
+            sudo pacman -S --needed gst-plugin-pipewire pipewire-{alsa,jack,media-session,pulse,zeroconf}
 
-            sudo pacman -S alsa-firmware pavucontrol-qt paprefs python-pulsectl pulseaudio-{bluetooth,alsa,equalizer-ladspa,jack,qt,zeroconf}
+            systemctl --user enable --now pipewire pipewire-pulse pipewire-media-session
       echo "#######################################"
       echo "          All Done, Rebooting          "
       echo "#######################################"
