@@ -1,0 +1,29 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "Restorinng Shell back to Bash"
+echo "#################################"
+sleep 2
+echo "Removing PowerLevel10k Theme"
+echo "#################################"
+rm -rf -- ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sleep 2
+echo "Removing OhMyZsh"
+echo "#################################"
+cd $HOME/.oh-my-zsh/tools/
+chmod +x uninstall.sh
+./uninstall.sh
+sleep 2
+echo "Setting Default Shell to BASH"
+echo "#################################"
+sudo chsh $USER -s /bin/bash
+sed -i 's|/bin/zsh|/bin/bash|g' ~/.local/share/konsole/XeroLinux.profile
+sleep 2
+echo "Cleaning up"
+echo "#################################"
+cd $HOME/
+rm .zshrc-oem .zsh_* .p10k.zsh .zshrc.omz-*
+sleep 2
+echo "#################################"
+echo "Done ! Now Logout & back in"
+echo "#################################"

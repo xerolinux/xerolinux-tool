@@ -1,0 +1,5 @@
+#!/bin/bash
+yad --title "XeroLinux Rice Switcher Tool" --form --columns=2 --width=480 --height=160 --text="Use this tool to switch to another of my rices." --image=$HOME/xero.png \
+--field="<b>Rices Preview (imgur)</b>":fbtn "xdg-open https://imgur.com/a/PJIKI8L" \
+--field="<b>Launch Rice Switcher</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/rswitch'" \
+--button=Close:1

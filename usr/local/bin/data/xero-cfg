@@ -1,0 +1,7 @@
+#!/bin/bash
+yad --title "XeroLinux Config Updater" --form --columns=2 --width=480 --height=175 --text="Use this tool to update some Xero Specific configs." --image=$HOME/xero.png  \
+--field="<b>Update Xero Repos</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/prepos'" \
+--field="<b>Update Bash Aliases</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/bashup'" \
+--field="<b>Update Arch Keys</b>":fbtn "konsole --noclose -e 'sudo pacman -S --noconfirm archlinux-keyring'" \
+--field="<b>Update ZSH Aliases</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/zshup'" \
+--button=Close:1

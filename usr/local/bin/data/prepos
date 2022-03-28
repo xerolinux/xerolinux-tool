@@ -1,0 +1,20 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "Updating Xero Repos to latest"
+echo "#################################"
+echo
+echo "Step 1 - Updating Xero-Mirrorlist"
+echo "#################################"
+sudo rm /etc/pacman.d/xero-mirrorlist
+cd /etc/pacman.d/ && sudo wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/patches/xero-mirrorlist
+sleep 3
+echo
+echo "Step 2 - Updating Pacman.conf"
+echo "#################################"
+sudo rm /etc/pacman.conf
+cd /etc/ && sudo wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/pacman.conf
+sleep 3
+echo "#################################"
+echo "Updating Xero Repos Done! Exit Me"
+echo "#################################"

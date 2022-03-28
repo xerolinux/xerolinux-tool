@@ -1,0 +1,18 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "Updating Bashrc to fastest"
+echo "#################################"
+echo
+echo "Step 1 - Cleaning up Bashrc"
+echo "#################################"
+sudo rm $HOME/.bashrc
+sleep 3
+echo
+echo "Step 2 - Grabbing Latest Bashrc"
+echo "#################################"
+cd $HOME/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/.bashrc
+sleep 3
+echo "#################################"
+echo "Updating Bashrc Done! Exit Me"
+echo "#################################"

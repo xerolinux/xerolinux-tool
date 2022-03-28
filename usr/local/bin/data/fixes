@@ -1,0 +1,9 @@
+#!/bin/bash
+yad --title "XeroLinux Common Issue Fixer" --form --columns=2 --width=480 --height=175 --text="Use this tool for troubleshooting. Recall via <b>fixme</b> in terminal" --image=$HOME/xero.png  \
+--field="<b>Audio Server Switcher</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/audio'" \
+--field="<b>Hardware Probe</b>":fbtn "konsole --noclose -e 'sudo -E hw-probe -all -upload'" \
+--field="<b>Fix Arch GPG Keys</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/keyfix'" \
+--field="<b>Check Failed Services</b>":fbtn "konsole --noclose -e 'systemctl list-units --failed'" \
+--field="<b>Update Xero Configs</b>":fbtn '/usr/local/bin/data/xero-cfg' \
+--field="<b>Update Arch Mirrors</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/mirrors'" \
+--button=Close:1

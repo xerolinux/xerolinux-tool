@@ -1,0 +1,9 @@
+#!/bin/bash
+yad --title "XeroLinux Game Launcher Tool" --form --columns=2 --width=480 --height=175 --text="Use this tool to install your favourite Game Launchers. Recall this by typing <b>gaming</b> in Terminal." --image=$HOME/xero.png  \
+--field="<b>Install Steam (Native)</b>":fbtn "konsole -e 'sudo pacman -S --noconfirm steam-native-runtime gamemode'" \
+--field="<b>Install Heroic Launcher</b>":fbtn "konsole -e 'sudo pacman -S --noconfirm heroic-games-launcher-bin gamemode'" \
+--field="<b>Install Lutris Launcher</b>":fbtn "konsole -e 'sudo pacman -S --noconfirm lutris gamemode'" \
+--field="<b>Install ProtonGE Updater</b>":fbtn "konsole -e 'sudo pacman -S --noconfirm proton-community-updater'" \
+--field="<b>Install Mangohud/Goverlay</b>":fbtn "konsole -e 'sudo pacman -S --noconfirm mangohud goverlay-bin'" \
+--field="<b>Install Bottles Launcher</b>":fbtn "konsole -e 'sudo pacman -S --noconfirm bottles'" \
+--button=Close:1

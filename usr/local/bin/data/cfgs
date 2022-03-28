@@ -1,0 +1,7 @@
+#!/bin/bash
+yad --title "Misc Configs & Other Stuff" --form --columns=2 --width=480 --height=160 --text="Use this to configure stuff." --image=$HOME/xero.png  \
+--field="<b>Configure Samba (WINS)</b>":fbtn "konsole -e sh -c 'sudo /usr/local/bin/data/smb'" \
+--field="<b>Shell Configuration</b>":fbtn '/usr/local/bin/data/shell' \
+--field="<b>Initialize Snapper (BTRFS)</b>":fbtn "konsole -e sh -c '/usr/local/bin/data/snap'" \
+--field="<b>A Few Extra Packages</b>":fbtn '/usr/local/bin/data/extras' \
+--button=Close:1
