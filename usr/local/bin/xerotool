@@ -3,5 +3,5 @@ yad --title "XeroLinux Configuration Tool" --form --columns=2 --width=480 --heig
 --field="<b>Fix Common Issues</b>":fbtn '/usr/local/bin/data/fixes' \
 --field="<b>Various System Configs</b>":fbtn '/usr/local/bin/data/cfgs' \
 --field="<b>XeroLinux Rices</b>":fbtn '/usr/local/bin/data/ricez' \
---field="<b>Disable Autostart</b>":fbtn "konsole -e 'rm $HOME/.config/autostart/sysconfig.desktop'" \
+--field="<b>Disable Autostart</b>":fbtn "konsole -e 'rm $HOME/.config/autostart/xero-tool.desktop'" \
 --button=Exit:1
