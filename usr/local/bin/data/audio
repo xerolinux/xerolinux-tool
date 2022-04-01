@@ -16,8 +16,8 @@ tput sgr0
 echo
 echo "Hey there, So What Shall We Do ?"
 echo
-echo "1.  Replace PipeWire With Pulse"
-echo "2.  Replace Pulse With PipeWire"
+echo "1.  Replace PipeWire With Pulse."
+echo "2.  Revert Back To Pulse Please..."
 echo "3.  Nothing/Exit"
 echo
 echo "Type the number..."

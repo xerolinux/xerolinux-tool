@@ -6,7 +6,7 @@ echo "#################################"
 echo
 echo "Step 1 - Cleaning up Bashrc"
 echo "#################################"
-sudo rm $HOME/.bashrc
+rm $HOME/.bashrc
 sleep 3
 echo
 echo "Step 2 - Grabbing Latest Bashrc"

@@ -6,7 +6,7 @@ echo "#################################"
 echo
 echo "Step 1 - Cleaning up ZSHrc"
 echo "#################################"
-sudo rm $HOME/.zshrc
+rm $HOME/.zshrc
 sleep 3
 echo
 echo "Step 2 - Grabbing Latest ZSHrc"

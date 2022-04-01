@@ -1,0 +1,5 @@
+#!/bin/bash
+yad --title "Visual Studio" --form --columns=2 --width=480 --height=160 --text="Use this tool to install Visual Studio." --image=$HOME/xero.png  \
+--field="<b>VisualStudio Code</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S --noconfirm visual-studio-code-bin'" \
+--field="<b>VS-Codium (bin)</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S --noconfirm vscodium-bin'" \
+--button=Close:1
