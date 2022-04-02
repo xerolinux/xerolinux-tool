@@ -1,7 +1,9 @@
 #!/bin/bash
-yad --title "Extra Packages" --form --columns=2 --width=480 --height=160 --text="Use this tool to install extra packages." --image=$HOME/xero.png  \
+yad --title "Extra Packages" --form --columns=2 --width=480 --height=225 --text="Use this tool to install extra packages." --image=$HOME/xero.png  \
 --field="<b>Gaming AiO Installer</b>":fbtn '/usr/local/bin/data/gaming' \
+--field="<b>Install Git Tools</b>":fbtn '/usr/local/bin/data/gitstudio' \
 --field="<b>Install VirtManager</b>":fbtn "konsole -e sh -c 'sudo /usr/local/bin/data/kvm-qemu'" \
 --field="<b>Install/Enable Firewall</b>":fbtn '/usr/local/bin/data/secu' \
 --field="<b>Install Visual-Studio</b>":fbtn '/usr/local/bin/data/vstudio' \
+--field="<b>Install Jitsi Meet</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S --noconfirm jitsi-meet-desktop-bin'" \
 --button=Close:1

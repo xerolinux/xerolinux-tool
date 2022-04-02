@@ -1,5 +1,5 @@
 #!/bin/bash
-yad --title "XeroLinux Configuration Tool" --form --columns=2 --width=480 --height=150 --text="Use this tool to configure your system. Now available in the AppMenu under <b>Utilities</b> or by typing <b>sysconfig</b> in Terminal." --image=$HOME/xero.png  \
+yad --title "XeroLinux Configuration Tool" --form --columns=2 --width=480 --height=150 --text="Use this tool to configure your system. Now available in the AppMenu under <b>Utilities</b> or by typing <b>xerotool</b> in Terminal." --image=$HOME/xero.png  \
 --field="<b>Various System Configs</b>":fbtn '/usr/local/bin/data/cfgs' \
 --field="<b>A Few Extra Packages</b>":fbtn '/usr/local/bin/data/extras' \
 --field="<b>Fix Common Issues</b>":fbtn '/usr/local/bin/data/fixes' \
