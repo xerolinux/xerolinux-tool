@@ -14,13 +14,15 @@ echo "#                                                                         
 echo "#   Applying New Rice Will Wipe & Replace All Your Settings With New Ones !   #"
 echo "#    It's preferable to apply new Rice directly post install. BE WARNED !!    #"
 echo "#                                                                             #"
+echo "#        !!! This Will Reboot System, Save Work, Before Proceeding !!!        #"
+echo "#                                                                             #"
 echo "#                    Report Any Issues on Telegram/Discord                    #"
 echo "###############################################################################"
 tput sgr0
 echo
 echo "Select a Rice to Apply"
 echo
-echo "1.  Apply Xero Cherry"
+echo "1.  Apply Xero Cherry (Latest)"
 echo "2.  Apply Xero Layan"
 echo "3.  Apply Xero Nord"
 echo "4.  Apply Xero Sweet"
