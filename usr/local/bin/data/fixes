@@ -1,9 +1,9 @@
 #!/bin/bash
 yad --title "XeroLinux Common Issue Fixer" --form --columns=2 --width=480 --height=175 --text="Use this tool for troubleshooting. Recall via <b>fixme</b> in terminal" --image=$HOME/xero.png  \
 --field="<b>Audio Server Switcher</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/audio'" \
---field="<b>Hardware Probe</b>":fbtn "konsole --noclose -e 'sudo -E hw-probe -all -upload'" \
+--field="<b>Dolphin Open As Root</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/dolphroot'" \
 --field="<b>Fix Arch GPG Keys</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/keyfix'" \
---field="<b>Check Failed Services</b>":fbtn "konsole --noclose -e 'systemctl list-units --failed'" \
---field="<b>Enable Reflector Service</b>":fbtn "konsole --noclose -e 'sudo systemctl enable --now reflector'" \
+--field="<b>Long Shutdown Fix</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/shutfix'" \
+--field="<b>X11 Default Session</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/xway'" \
 --field="<b>Update Arch Mirrors</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/mirrors'" \
 --button=Close:1

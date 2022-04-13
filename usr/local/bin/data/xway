@@ -1,0 +1,10 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo " Setting X11 As Default Session. "
+echo "#################################"
+sudo rm /etc/sddm.conf
+cd /etc/ && sudo wget https://raw.githubusercontent.com/xerolinux/kde_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
+echo "#################################"
+echo "      Done! Will Reboot Now      "
+echo "#################################"
