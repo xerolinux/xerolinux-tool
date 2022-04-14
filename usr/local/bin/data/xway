@@ -3,10 +3,11 @@
 echo "#################################"
 echo " Setting X11 As Default Session. "
 echo "#################################"
-sudo rm /etc/sddm.conf.d/kde_settings.conf
-cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/kde_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
+sleep 3
+sudo sed -i "7i DisplayServer=x11" /etc/sddm.conf.d/kde_settings.conf
+sleep 3
 echo "#################################"
 echo "      Done! Will Reboot Now      "
 echo "#################################"
-sleep 2
+sleep 5
 reboot
