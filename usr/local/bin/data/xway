@@ -3,8 +3,10 @@
 echo "#################################"
 echo " Setting X11 As Default Session. "
 echo "#################################"
-sudo rm /etc/sddm.conf
-cd /etc/ && sudo wget https://raw.githubusercontent.com/xerolinux/kde_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
+sudo rm /etc/sddm.conf.d/kde_settings.conf
+cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/kde_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
 echo "#################################"
 echo "      Done! Will Reboot Now      "
 echo "#################################"
+sleep 2
+reboot
