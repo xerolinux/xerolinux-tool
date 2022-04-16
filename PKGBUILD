@@ -2,7 +2,7 @@
 pkgname=xerolinux-tool
 _destname1="/"
 pkgver=0.1.4
-pkgrel=2
+pkgrel=3
 pkgdesc="XeroLinux Configuration Tool"
 arch=('any')
 url="https://github.com/XeroLinux"
