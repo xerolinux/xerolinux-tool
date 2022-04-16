@@ -4,6 +4,7 @@ echo "#################################"
 echo "  Replacing Pamac With Bauh GUI. "
 echo "#################################"
 sleep 3
+sudo pacman -Rdd --noconfirm pamac-all libpamac-full
 sudo pacman -S --noconfirm bauh ccache flatpak
 sleep 3
 rm $HOME/.config/autostart/pamac-tray-plasma.desktop
