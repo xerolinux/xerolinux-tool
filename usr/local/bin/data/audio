@@ -36,7 +36,7 @@ case $CHOICE in
       echo "#######################################"
       echo "          All Done, Rebooting          "
       echo "#######################################"
-            sleep 5
+            sleep 20
 			reboot
       ;;
 
@@ -49,7 +49,7 @@ case $CHOICE in
       echo "#######################################"
       echo "          All Done, Rebooting          "
       echo "#######################################"
-            sleep 5
+            sleep 20
 			reboot
       ;;
 

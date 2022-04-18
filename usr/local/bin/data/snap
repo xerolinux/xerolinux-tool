@@ -16,5 +16,5 @@ echo "#####################################"
 echo "    Done! System Will now reboot.    "
 echo "   You Can Now use BTRFS-Assistant   "
 echo "#####################################"
-sleep 6
+sleep 20
 reboot

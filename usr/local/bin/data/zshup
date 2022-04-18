@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -e
 echo "#################################"
-echo "Updating ZSHrc to fastest"
+echo "    Updating ZSHrc to fastest    "
 echo "#################################"
 echo
 echo "Step 1 - Cleaning up ZSHrc"
@@ -14,5 +14,5 @@ echo "#################################"
 cd $HOME/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/.zshrc
 sleep 3
 echo "#################################"
-echo "Updating ZSHrc Done! Exit Me"
+echo "  Updating ZSHrc Done! Exit Me   "
 echo "#################################"

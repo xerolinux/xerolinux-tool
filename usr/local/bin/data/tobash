@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -e
 echo "#################################"
-echo "Restorinng Shell back to Bash"
+echo "  Restorinng Shell back to Bash  "
 echo "#################################"
 sleep 2
 echo "Removing PowerLevel10k Theme"
@@ -25,5 +25,5 @@ cd $HOME/
 rm .zshrc-oem .zsh_* .p10k.zsh .zshrc.omz-*
 sleep 2
 echo "#################################"
-echo "Done ! Now Logout & back in"
+echo "   Done ! Now Logout & back in   "
 echo "#################################"

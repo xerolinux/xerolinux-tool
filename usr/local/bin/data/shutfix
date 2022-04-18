@@ -11,5 +11,5 @@ sleep 5
 echo "#################################"
 echo "      Done! Will Reboot Now      "
 echo "#################################"
-sleep 2
+sleep 20
 reboot

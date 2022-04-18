@@ -14,7 +14,5 @@ cd /usr/share/ && sudo mkdir b-tray && cd /usr/share/b-tray/ && sudo wget https:
 cd /usr/share/b-tray/ && sudo wget https://codeberg.org/XeroLinux-Dev/kde_iso_dev/raw/branch/main/archiso/airootfs/usr/share/b-tray/upd.png
 sleep 3
 echo "#################################"
-echo "      Done! Will Reboot Now      "
+echo "      Done! You Can Close It     "
 echo "#################################"
-sleep 5
-reboot
