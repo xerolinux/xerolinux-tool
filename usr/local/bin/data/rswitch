@@ -20,18 +20,18 @@ echo "#                    Report Any Issues on Telegram/Discord                
 echo "###############################################################################"
 tput sgr0
 echo
-echo "Select a Rice to Apply"
+echo "Select an Action to Apply"
 echo
 echo "1.  Apply Xero Cherry (Latest)"
 echo "2.  Apply Xero Layan"
 echo "3.  Apply Xero Nord"
 echo "4.  Apply Xero Sweet"
 echo "5.  Apply Xero Dracul"
-echo "6.  Reset ISO Defaults."
+echo "6.  Restore ISO Defaults."
 echo "7.  Reset to Vanilla KDE."
 echo "8.  Nothing/Exit"
 echo
-echo "Type the number..."
+echo "Type Your Selection..."
 echo
 
 read CHOICE
