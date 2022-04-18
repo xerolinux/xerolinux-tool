@@ -27,8 +27,9 @@ echo "2.  Apply Xero Layan"
 echo "3.  Apply Xero Nord"
 echo "4.  Apply Xero Sweet"
 echo "5.  Apply Xero Dracul"
-echo "6.  Uninstall All Rices."
-echo "7.  Nothing/Exit"
+echo "6.  Reset ISO Defaults."
+echo "7.  Reset to Vanilla KDE."
+echo "8.  Nothing/Exit"
 echo
 echo "Type the number..."
 echo
@@ -42,7 +43,7 @@ case $CHOICE in
       echo "##########################################"
       echo "       Installing Xero Cherry Rice        "
       echo "Careful, This will Undo All Your Settings!"
-      echo "You have 10 seconds to cancel with ctrl+c "
+      echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sleep 10
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
@@ -62,7 +63,7 @@ case $CHOICE in
       echo "##########################################"
       echo "        Installing Xero Layan Rice        "
       echo "Careful, This will Undo All Your Settings!"
-      echo "You have 10 seconds to cancel with ctrl+c "
+      echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sleep 10
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
@@ -82,7 +83,7 @@ case $CHOICE in
       echo "##########################################"
       echo "        Installing Xero Nord Rice         "
       echo "Careful, This will Undo All Your Settings!"
-      echo "You have 10 seconds to cancel with ctrl+c "
+      echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-nord-git.git && cd ~/xero-nord-git/
@@ -101,7 +102,7 @@ case $CHOICE in
         echo "##########################################"
         echo "        Installing Xero Sweet Rice        "
         echo "Careful, This will Undo All Your Settings!"
-        echo "You have 10 seconds to cancel with ctrl+c "
+        echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
               sudo rm /etc/sddm.conf.d/kde_settings.conf
               cd $HOME && git clone https://github.com/xerolinux/xero-sweet-git.git && cd ~/xero-sweet-git/
@@ -120,7 +121,7 @@ case $CHOICE in
         echo "##########################################"
         echo "       Installing Xero Dracul Rice        "
         echo "Careful, This will Undo All Your Settings!"
-        echo "You have 10 seconds to cancel with ctrl+c "
+        echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-dracul-git.git && cd ~/xero-dracul-git/
@@ -137,9 +138,26 @@ case $CHOICE in
       6 )
         echo
         echo "##########################################"
-        echo "        Installing Xero Layan Rice        "
+        echo "          Restoring ISO Defaults          "
         echo "Careful, This will Undo All Your Settings!"
-        echo "You have 10 seconds to cancel with ctrl+c "
+        echo " Will Not Restore Grub Theme. Do Manually "
+        echo "You have 20 seconds to cancel with ctrl+c "
+        echo "##########################################"
+			cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
+            cp -rf /etc/skel/. ~
+	  echo "#######################################"
+      echo "        Restore Done, Rebooting        "
+      echo "#######################################"
+            sleep 20
+			reboot
+      ;;
+
+      7 )
+        echo
+        echo "##########################################"
+        echo "         Resetting to Vanilla KDE         "
+        echo "Careful, This will Undo All Your Settings!"
+        echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
             sleep 2
             mv ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
@@ -152,14 +170,14 @@ case $CHOICE in
             sudo grub-mkconfig -o /boot/grub/grub.cfg
             sed -i "s/{C4}/{C1}/g" ~/XeroAscii
        echo "#######################################"
-       echo "    New Rice has been set Rebooting    "
+       echo "         Reset Done, Rebooting         "
        echo "#######################################"
             sleep 20
 			reboot
       ;;
 
 
-    7 )
+    8 )
       echo
       echo "########################################"
       echo "   We did nothing as per your request   "
