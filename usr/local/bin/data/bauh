@@ -10,6 +10,7 @@ sleep 3
 rm $HOME/.config/autostart/pamac-tray-plasma.desktop
 cd $HOME/.config/autostart/ && wget https://raw.githubusercontent.com/xerolinux/kde-rice/main/etc/skel/.config/autostart/bauh-tray.desktop
 cd $HOME/.config/ && mkdir bauh && cd bauh/ && wget https://github.com/xerolinux/kde-rice/blob/main/etc/skel/.config/bauh/config.yml
+cd $HOME/.config/bauh/ && wget https://raw.githubusercontent.com/xerolinux/kde-rice/main/etc/skel/.config/bauh/arch.yml
 cd /usr/share/ && sudo mkdir b-tray && cd /usr/share/b-tray/ && sudo wget https://codeberg.org/XeroLinux-Dev/kde_iso_dev/raw/branch/main/archiso/airootfs/usr/share/b-tray/def.png
 cd /usr/share/b-tray/ && sudo wget https://codeberg.org/XeroLinux-Dev/kde_iso_dev/raw/branch/main/archiso/airootfs/usr/share/b-tray/upd.png
 sleep 3
