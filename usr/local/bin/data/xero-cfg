@@ -2,6 +2,6 @@
 yad --title "XeroLinux Config Updater" --form --columns=2 --width=480 --height=175 --text="Use this tool to update some Xero Specific configs. Only use this if you are on ISO <b>Older than May 25th</b>" --image=$HOME/xero.png  \
 --field="<b>Update Xero Repos</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/prepos'" \
 --field="<b>Update Bash Aliases</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/bashup'" \
---field="<b>XeroLinux Forums</b>":fbtn 'xdg-open https://forum.xerolinux.xyz/' \
+--field="<b>Update/Fix Pamac</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -Rdd --noconfirm pamac-all libpamac-full && sudo pacman -S --noconfirm pamac-gtk libpamac'" \
 --field="<b>Update ZSH Aliases</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/zshup'" \
 --button=Close:1
