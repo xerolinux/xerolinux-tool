@@ -1,7 +1,0 @@
-#!/bin/bash
-yad --title "VM Install Tool" --form --columns=2 --width=480 --height=160 --text="Select Which Virtualization System You Want." --image=$HOME/xero.png  \
---field="<b>KVM/Qemu</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S virt-manager-meta'" \
---field="<b>VMWare Workstation</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S --noconfirm vmware-workstation'" \
---field="<b>VirtualBox</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S --noconfirm virtualbox-meta'" \
---field="<b>VMWare Keymaps</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S --noconfirm vmware-keymaps'" \
---button=Close:1

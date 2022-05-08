@@ -1,5 +1,0 @@
-#!/bin/bash
-yad --title "FireWall Tools" --form --columns=2 --width=480 --height=160 --text="Use this tool to install Firewall tools." --image=$HOME/xero.png  \
---field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh -c 'paru -S hblock --noconfirm && sudo hblock'" \
---field="<b>Install/Enable Firewall</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S -- noconfirm plasma-firewall firewalld && sudo systemctl enable --now firewalld'" \
---button=Close:1
