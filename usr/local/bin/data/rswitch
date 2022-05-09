@@ -156,9 +156,9 @@ case $CHOICE in
             cp -rf /etc/skel/. ~
             sudo pacman -S latte-dock --noconfirm --needed
             sudo rm /usr/share/defaultbg/XeroLinux.png
-            cd /usr/share/defaultbg/ && sudo wget https://github.com/xerolinux/kde_iso/raw/main/archiso/airootfs/usr/share/defaultbg/XeroLinux.png
+            cd /usr/share/defaultbg/ && sudo wget https://github.com/xerolinux/xero_iso/raw/main/archiso/airootfs/usr/share/defaultbg/XeroLinux.png
             sudo rm /etc/sddm.conf.d/kde_settings.conf
-            cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/kde_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
+            cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
             sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
             cd ~ && git clone https://github.com/xerolinux/default-grub.git
             cd ~/default-grub/ && sudo ./install.sh
