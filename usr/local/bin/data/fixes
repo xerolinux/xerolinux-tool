@@ -4,6 +4,6 @@ yad --title "XeroLinux Common Issue Fixer" --form --columns=2 --width=480 --heig
 --field="<b>Dolphin Open As Root</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/dolphroot'" \
 --field="<b>Fix Arch Keyring</b>":fbtn "konsole -e sh -c 'sudo pacman -S --noconfirm archlinux-keyring && sudo pacman -Sy'" \
 --field="<b>Long Shutdown Fix</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/shutfix'" \
---field="<b>X11 Default Session</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/xway'" \
+--field="<b>Add Wayland Support</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/xway'" \
 --field="<b>Update Arch Mirrors</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/mirrors'" \
 --button=Close:1
