@@ -6,7 +6,7 @@ echo "#######################################"
 echo
 echo " Step 1 - Installing Plasma Firewall  "
 echo "######################################"
-sudo pacman -S -- noconfirm plasma-firewall firewalld
+sudo pacman -S --noconfirm plasma-firewall firewalld
 sleep 3
 echo
 echo "  Step 2 - Enabling Firewall Service  "
