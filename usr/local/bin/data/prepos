@@ -7,7 +7,7 @@ echo
 echo "Step 1 - Updating Xero-Mirrorlist"
 echo "#################################"
 sudo rm /etc/pacman.d/xero-mirrorlist
-cd /etc/pacman.d/ && sudo wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/patches/xero-mirrorlist
+sudo pacman -S --noconfirm xerolinux-mirrorlist
 sleep 3
 echo
 echo "Step 2 - Updating Pacman.conf"
