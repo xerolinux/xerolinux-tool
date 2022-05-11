@@ -1,9 +1,9 @@
 #!/bin/bash
 yad --title "Misc System Configs" --form --columns=2 --width=480 --height=160 --text="Use this to configure stuff." --image=$HOME/xero.png  \
---field="<b>Install/Configure Samba</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S --noconfirm samba-support'" \
---field="<b>Install/Enable Firewall</b>":fbtn "konsole --noclose -e sh -c 'sudo pacman -S -- noconfirm plasma-firewall firewalld && sudo systemctl enable --now firewalld'" \
+--field="<b>Install/Configure Samba</b>":fbtn "konsole -e sh -c 'sudo pacman -S --noconfirm samba-support'" \
+--field="<b>Install/Enable Firewall</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/firewalled'" \
 --field="<b>Shell Configuration</b>":fbtn '/usr/local/bin/data/shell' \
 --field="<b>Initialize Snapper (BTRFS)</b>":fbtn "konsole -e sh -c '/usr/local/bin/data/snap'" \
---field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh -c 'paru -S hblock --noconfirm && sudo hblock'" \
+--field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/hblkaur'" \
 --field="<b>Run Partition Manager</b>":fbtn '/usr/bin/gnome-disks' \
 --button=Close:1

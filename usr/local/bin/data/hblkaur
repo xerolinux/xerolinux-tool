@@ -1,0 +1,18 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "   Installing/Enabling H-Block   "
+echo "#################################"
+echo
+echo " Step 1 - Installing H-Block from AUR "
+echo "######################################"
+paru -S --noconfirm hblock
+sleep 3
+echo
+echo "Step 2 - Enabling H-Block Service Now "
+echo "######################################"
+sudo hblock
+sleep 3
+echo "#################################"
+echo "      Updating Done! Exit Me     "
+echo "#################################"
