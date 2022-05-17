@@ -1,0 +1,12 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "   Checking For System Updates   "
+echo "#################################"
+echo
+paru -Syyu
+sleep 3
+echo
+echo "#################################"
+echo "      Updating Done! Exit Me     "
+echo "#################################"
