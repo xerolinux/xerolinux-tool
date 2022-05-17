@@ -6,4 +6,4 @@ yad --title "Misc System Configs" --form --columns=2 --width=480 --height=160 --
 --field="<b>Update .bashrc/.zshrc</b>":fbtn '/usr/local/bin/data/aliases' \
 --field="<b>Initialize Snapper (BTRFS)</b>":fbtn "konsole -e sh -c '/usr/local/bin/data/snap'" \
 --field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/hblkaur'" \
---button=Close:1
+--button=Back:1
