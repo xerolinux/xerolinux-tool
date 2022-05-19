@@ -6,6 +6,7 @@ echo "#################################"
 echo
 echo "Step 1 - Cleaning up Bashrc"
 echo "#################################"
+cp $HOME/.bashrc $HOME/.bashrc.bak
 rm $HOME/.bashrc
 sleep 3
 echo
