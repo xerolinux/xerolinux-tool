@@ -27,8 +27,8 @@ echo "2.  Apply Xero Layan"
 echo "3.  Apply Xero Nord"
 echo "4.  Apply Xero Sweet"
 echo "5.  Apply Xero Dracul"
-echo "6.  Apply LightlyShaders."
-echo "7.  Restore ISO Defaults."
+echo "6.  Apply LightlyShaders"
+echo "7.  Restore ISO Defaults"
 echo "8.  Nothing/Exit"
 echo
 echo "Type Your Selection..."
@@ -147,12 +147,13 @@ case $CHOICE in
         echo
         echo "##########################################"
         echo "      Applying LightlyShaders Effect      "
+        echo " RESOURCE INTENSIVE, NOT FOR LOW-END PC ! "
         echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
             sleep 20
             sudo pacman -S --noconfirm --needed git make cmake gcc gettext extra-cmake-modules qt5-tools qt5-x11extras kcrash kglobalaccel kde-dev-utils kio knotifications kinit kwin
             cd $HOME && git clone https://github.com/a-parhom/LightlyShaders
-            cd $HOME/LightlyShaders; mkdir qt5build; cd qt5build; cmake ../ -DCMAKE_INSTALL_PREFIX=/usr && make && sudo make install && (kwin_x11 --replace &)
+            cd $HOME/LightlyShaders; mkdir qt5build; cd qt5build; cmake ../ -DCMAKE_INSTALL_PREFIX=/usr && make && sudo make install
             cd $HOME/.config/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/lightlyshaders.conf
             sed -i '40i kwin4_effect_lightlyshadersEnabled=true' ~/.config/kwinrc
             rm -rf ~/LightlyShaders/
