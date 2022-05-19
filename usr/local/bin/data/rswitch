@@ -27,8 +27,8 @@ echo "2.  Apply Xero Layan"
 echo "3.  Apply Xero Nord"
 echo "4.  Apply Xero Sweet"
 echo "5.  Apply Xero Dracul"
-echo "6.  Restore ISO Defaults."
-echo "7.  Reset to Vanilla KDE."
+echo "6.  Apply LightlyShaders."
+echo "7.  Restore ISO Defaults."
 echo "8.  Nothing/Exit"
 echo
 echo "Type Your Selection..."
@@ -146,6 +146,26 @@ case $CHOICE in
       6 )
         echo
         echo "##########################################"
+        echo "      Applying LightlyShaders Effect      "
+        echo "You have 20 seconds to cancel with ctrl+c "
+        echo "##########################################"
+            sleep 20
+            sudo pacman -S --noconfirm --needed git make cmake gcc gettext extra-cmake-modules qt5-tools qt5-x11extras kcrash kglobalaccel kde-dev-utils kio knotifications kinit kwin
+            cd $HOME && git clone https://github.com/a-parhom/LightlyShaders
+            cd $HOME/LightlyShaders; mkdir qt5build; cd qt5build; cmake ../ -DCMAKE_INSTALL_PREFIX=/usr && make && sudo make install && (kwin_x11 --replace &)
+            cd $HOME/.config/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/lightlyshaders.conf
+            sed -i '41i kwin4_effect_lightlyshadersEnabled=true' ~/.config/kwinrc
+            rm -rf ~/LightlyShaders/
+       echo "#######################################"
+       echo "         Reset Done, Rebooting         "
+       echo "#######################################"
+			sleep 6
+			reboot
+      ;;
+
+      7 )
+        echo
+        echo "##########################################"
         echo "          Restoring ISO Defaults          "
         echo "Careful, This will Undo All Your Settings!"
         echo " Will Not Restore Grub Theme. Do Manually "
@@ -168,31 +188,6 @@ case $CHOICE in
       echo "#######################################"
 			reboot
       ;;
-
-      7 )
-        echo
-        echo "##########################################"
-        echo "         Resetting to Vanilla KDE         "
-        echo "Careful, This will Undo All Your Settings!"
-        echo "You have 20 seconds to cancel with ctrl+c "
-        echo "##########################################"
-            sleep 20
-            rm -rf ~/xero-*-git/
-            mv ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-            mkdir -p ~/.config/neofetch/
-            sudo mv /etc/sddm.conf.d/kde_settings.conf /etc/skel/
-            cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/TechXero/Store/master/scripts/kde_settings.conf
-            sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
-            sudo sed -i "s/CursorTheme/#CursorTheme/g" /etc/sddm.conf
-            sudo sed -i "s/GRUB_THEME/#GRUB_THEME/g" /etc/default/grub
-            sudo grub-mkconfig -o /boot/grub/grub.cfg
-            sed -i "s/{C4}/{C1}/g" ~/XeroAscii
-       echo "#######################################"
-       echo "         Reset Done, Rebooting         "
-       echo "#######################################"
-			reboot
-      ;;
-
 
     8 )
       echo
