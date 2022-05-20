@@ -1,0 +1,11 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "    Fixing Pacman Architecture   "
+echo "#################################"
+echo
+sudo sed -i "s/Architecture = auto/Architecture = x86_64/g" /etc/pacman.conf
+sleep 3
+echo "#################################"
+echo "      Updating Done! Exit Me     "
+echo "#################################"
