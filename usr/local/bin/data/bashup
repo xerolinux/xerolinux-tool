@@ -11,7 +11,7 @@ sleep 3
 echo
 echo "Step 2 - Grabbing Latest Bashrc"
 echo "#################################"
-cd $HOME/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/.bashrc
+cd $HOME/ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/.bashrc
 sleep 3
 echo "#################################"
 echo "Updating Bashrc Done! Exit Me"

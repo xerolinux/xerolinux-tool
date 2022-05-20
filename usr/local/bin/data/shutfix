@@ -7,7 +7,7 @@ sleep 5
 sudo sed -i "s/#RebootWatchdogSec=10min/RebootWatchdogSec=30s/g" /etc/systemd/system.conf
 sudo sed -i "s/#DefaultTimeoutStopSec=90s/DefaultTimeoutStopSec=5s/g" /etc/systemd/system.conf
 sudo sed -i "s/#DefaultTimeoutStartSec=90s/DefaultTimeoutStartSec=10s/g" /etc/systemd/system.conf
-sudo pacman -S --noconfirm  qt5-virtualkeyboard qt6-virtualkeyboard
+sudo pacman -S --noconfirm  qt5-virtualkeyboard
 sleep 5
 echo "#################################"
 echo "      Done! Will Reboot Now      "

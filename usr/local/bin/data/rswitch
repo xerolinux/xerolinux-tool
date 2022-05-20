@@ -154,7 +154,7 @@ case $CHOICE in
             sudo pacman -S --noconfirm --needed git make cmake gcc gettext extra-cmake-modules qt5-tools qt5-x11extras kcrash kglobalaccel kde-dev-utils kio knotifications kinit kwin
             cd $HOME && git clone https://github.com/a-parhom/LightlyShaders
             cd $HOME/LightlyShaders; mkdir qt5build; cd qt5build; cmake ../ -DCMAKE_INSTALL_PREFIX=/usr && make && sudo make install
-            cd $HOME/.config/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/lightlyshaders.conf
+            cd $HOME/.config/ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/lightlyshaders.conf
             sed -i '40i kwin4_effect_lightlyshadersEnabled=true' ~/.config/kwinrc
             rm -rf ~/LightlyShaders/
        echo "#######################################"

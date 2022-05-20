@@ -1,0 +1,14 @@
+#!/bin/bash
+#set -e
+echo "#######################################"
+echo "       Installing/Enabling Samba       "
+echo "#######################################"
+echo
+echo "       Installing Samba-Support.       "
+echo "######################################"
+sudo pacman -S --noconfirm samba-support
+sleep 3
+echo
+echo "#################################"
+echo "Updating Done! Reboot Recommended"
+echo "#################################"

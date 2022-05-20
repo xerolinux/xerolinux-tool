@@ -1,7 +1,7 @@
 # Maintainer: DarkXero <info@techxero.com>
 pkgname=xerolinux-tool
 _destname1="/"
-pkgver=0.2.4
+pkgver=0.2.5
 pkgrel=3
 pkgdesc="XeroLinux Configuration Tool"
 arch=('any')

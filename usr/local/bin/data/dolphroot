@@ -8,7 +8,7 @@ sudo pacman -Rdd --noconfirm thunar thunar-archive-plugin thunar-media-tags-plug
 sleep 2
 cd $HOME/.local/share/kservices5/ServiceMenus/ && rm OpenrAsRoot.desktop
 sleep 2
-cd $HOME/.local/share/kservices5/ServiceMenus/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/patches/open_as_root.desktop
+cd $HOME/.local/share/kservices5/ServiceMenus/ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/patches/open_as_root.desktop
 sleep 2
 echo "#################################"
 echo "     Done! Restart Dolphin.      "

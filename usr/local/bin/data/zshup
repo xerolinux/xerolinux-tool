@@ -11,7 +11,7 @@ sleep 3
 echo
 echo "Step 2 - Grabbing Latest ZSHrc"
 echo "#################################"
-cd $HOME/ && wget https://codeberg.org/XeroLinux/os-fixes/raw/branch/main/conf/.zshrc
+cd $HOME/ && wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/.zshrc
 sleep 3
 echo "#################################"
 echo "  Updating ZSHrc Done! Exit Me   "
