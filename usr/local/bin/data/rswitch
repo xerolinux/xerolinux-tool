@@ -53,6 +53,7 @@ case $CHOICE in
 			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
 			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
 			sed -i "s/{C1}/{C4}/g" ~/XeroAscii
+			rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
@@ -74,6 +75,7 @@ case $CHOICE in
 			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
 			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
 			sed -i "s/{C4}/{C1}/g" ~/XeroAscii
+			rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
@@ -95,6 +97,7 @@ case $CHOICE in
 			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
 			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
 			sed -i "s/{C4}/{C1}/g" ~/XeroAscii
+			rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
@@ -116,6 +119,7 @@ case $CHOICE in
               sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
               sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
               sed -i "s/{C4}/{C1}/g" ~/XeroAscii
+              rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
@@ -137,6 +141,7 @@ case $CHOICE in
 			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
 			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
 			sed -i "s/{C4}/{C1}/g" ~/XeroAscii
+			rm -rf ~/xero-*-git/
 	  echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
