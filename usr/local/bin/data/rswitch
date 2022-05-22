@@ -46,7 +46,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sleep 20
-			rm -rf ~/xero-*-git/
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-cherry-git.git && cd ~/xero-cherry-git/
 			chmod +x ~/xero-cherry-git/install.sh && sh ~/xero-cherry-git/install.sh
@@ -68,7 +67,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sleep 20
-			rm -rf ~/xero-*-git/
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-layan-git.git && cd ~/xero-layan-git/
 			chmod +x ~/xero-layan-git/install.sh && sh ~/xero-layan-git/install.sh
@@ -90,7 +88,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
             sleep 20
-            rm -rf ~/xero-*-git/
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-nord-git.git && cd ~/xero-nord-git/
 			chmod +x ~/xero-nord-git/install.sh && sh ~/xero-nord-git/install.sh
@@ -112,7 +109,6 @@ case $CHOICE in
         echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
               sleep 20
-              rm -rf ~/xero-*-git/
               sudo rm /etc/sddm.conf.d/kde_settings.conf
               cd $HOME && git clone https://github.com/xerolinux/xero-sweet-git.git && cd ~/xero-sweet-git/
               chmod +x ~/xero-sweet-git/install.sh && sh ~/xero-sweet-git/install.sh
@@ -134,7 +130,6 @@ case $CHOICE in
         echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
 			sleep 20
-			rm -rf ~/xero-*-git/
 			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-dracul-git.git && cd ~/xero-dracul-git/
 			chmod +x ~/xero-dracul-git/install.sh && sh ~/xero-dracul-git/install.sh
