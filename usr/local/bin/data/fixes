@@ -2,7 +2,7 @@
 yad --title "XeroLinux Common Issue Fixer" --form --columns=2 --width=480 --height=220 --text="Use this tool for troubleshooting.
 
 <b>(*) Those fixes have already been applied to ISO from May 2022 onwards. Apply only if you on older version.</b>" --image=$HOME/xero.png  \
---field="<b>Apply Pacman.conf Fix (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/pcmn'" \
+--field="<b>Get New MirrorsList (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/pcmn'" \
 --field="<b>Dolphin Open As Root (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/dolphroot'" \
 --field="<b>Apply Arch GPG Keys Fix</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/keyfix'" \
 --field="<b>Long Shutdown Fix (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/shutfix'" \
