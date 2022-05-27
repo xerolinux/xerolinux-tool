@@ -1,10 +1,12 @@
 #!/bin/bash
 #set -e
 echo "#################################"
-echo "    Fixing Pacman Architecture   "
+echo "    Updating Pacman.conf Now     "
 echo "#################################"
 echo
-sudo sed -i "s/Architecture = auto/Architecture = x86_64/g" /etc/pacman.conf
+sudo pacman -Sy && sudo pacman -S --noconfirm xerolinux-mirrorlist
+cd /etc/ && sudo rm pacman.conf
+cd /etc/pacman.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/pacman.conf
 sleep 3
 echo "#################################"
 echo "      Updating Done! Exit Me     "
