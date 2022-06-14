@@ -1,9 +1,9 @@
 #!/bin/bash
 yad --title "XeroLinux Configuration Tool" --form --columns=2 --width=480 --height=150 --text="Use this tool to configure your system. Now available in the AppMenu under <b>Utilities</b> or by typing <b>xerotool</b> in Terminal." --image=/usr/share/icons/scalable/apps/xero.png  \
---field="<b>Update System Now</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/sysupd'" \
+--field="<b>Update System Now</b>":fbtn "konsole --noclose -e sh './data/sysupd'" \
 --field="<b>XeroLinux App Installer</b>":fbtn "konsole -e 'sudo -E /usr/lib/xero-piai/xero-piai --setupmode'" \
---field="<b>Apply New Changes/Fixes</b>":fbtn '/usr/local/bin/data/fixes' \
---field="<b>XeroLinux Rices</b>":fbtn '/usr/local/bin/data/ricez' \
---field="<b>Various System Configs</b>":fbtn '/usr/local/bin/data/cfgs' \
+--field="<b>Apply New Changes/Fixes</b>":fbtn './data/fixes' \
+--field="<b>XeroLinux Rices</b>":fbtn './data/ricez' \
+--field="<b>Various System Configs</b>":fbtn './data/cfgs' \
 --field="<b>Disable Autostart</b>":fbtn "konsole -e 'rm $HOME/.config/autostart/xero-tool.desktop'" \
 --button=Exit:1
