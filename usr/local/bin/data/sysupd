@@ -4,7 +4,7 @@ echo "#################################"
 echo "   Checking For System Updates   "
 echo "#################################"
 echo
-paru -Syyu
+yay -Syyu
 sleep 3
 echo
 echo "#################################"

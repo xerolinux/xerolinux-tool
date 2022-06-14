@@ -1,5 +1,5 @@
 #!/bin/bash
-yad --title "XeroLinux Shell Selection Tool" --form --columns=2 --width=480 --height=160 --text="Use this tool to configure your Shell. Recall this by typting <b>shell</b> in Terminal." --image=$HOME/xero.png \
---field="Switch to ZSH (OMZ+P10k)":fbtn "konsole --noclose -e sh -c '/usr/local/bin/data/tozsh'" \
---field="Revert Back Default Bash":fbtn "konsole --noclose -e sh -c '/usr/local/bin/data/tobash'" \
+yad --title "XeroLinux Shell Selection Tool" --form --columns=2 --width=480 --height=160 --text="Use this tool to configure your Shell. Recall this by typting <b>shell</b> in Terminal." --image=/usr/share/icons/scalable/apps/xero.png \
+--field="Switch to ZSH (OMZ+P10k)":fbtn "konsole --noclose -e sh -c './tozsh'" \
+--field="Revert Back Default Bash":fbtn "konsole --noclose -e sh -c './tobash'" \
 --button=Back:1

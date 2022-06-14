@@ -1,9 +1,9 @@
 #!/bin/bash
-yad --title "Misc System Configs" --form --columns=2 --width=480 --height=160 --text="Use this to configure stuff." --image=$HOME/xero.png  \
---field="<b>Shell Configuration</b>":fbtn '/usr/local/bin/data/shell' \
---field="<b>Install/Configure Samba</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/smbinst'" \
---field="<b>Install/Enable Firewall</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/firewalled'" \
---field="<b>Update .bashrc/.zshrc</b>":fbtn '/usr/local/bin/data/aliases' \
---field="<b>Initialize Snapper (BTRFS)</b>":fbtn "konsole -e sh -c '/usr/local/bin/data/snap'" \
---field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/hblkaur'" \
+yad --title "Misc System Configs" --form --columns=2 --width=480 --height=160 --text="Use this to configure your System." --image=/usr/share/icons/scalable/apps/xero.png  \
+--field="<b>Shell Configuration</b>":fbtn './shell' \
+--field="<b>Install KVM/Virt-Manager</b>":fbtn "konsole --noclose -e sh './kvm'" \
+--field="<b>Install/Enable Firewall</b>":fbtn "konsole --noclose -e sh './firewalled'" \
+--field="<b>Update .bashrc/.zshrc</b>":fbtn './shellrcz' \
+--field="<b>Initialize Snapper (BTRFS)</b>":fbtn "konsole -e sh -c './snapcfg'" \
+--field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh './hblkaur'" \
 --button=Back:1

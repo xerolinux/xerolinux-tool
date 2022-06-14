@@ -1,5 +1,0 @@
-#!/bin/bash
-yad --title "XeroLinux Config Updater" --form --columns=2 --width=480 --height=175 --text="Use this tool to update Xero Bash or ZSH configs." --image=$HOME/xero.png  \
---field="<b>Update Bash Aliases</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/bashup'" \
---field="<b>Update ZSH Aliases</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/zshup'" \
---button=Back:1

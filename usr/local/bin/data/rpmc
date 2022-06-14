@@ -11,7 +11,7 @@ sleep 3
 echo
 echo "Step 2 - Installing Source-Built Pamac"
 echo "######################################"
-sudo pacman -S --noconfirm pamac-gtk libpamac
+sudo pacman -S --noconfirm pamac-gtk libpamac pamac-tray-icon-plasma
 sleep 3
 echo "#################################"
 echo "      Updating Done! Exit Me     "
