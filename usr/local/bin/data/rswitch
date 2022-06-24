@@ -128,19 +128,19 @@ case $CHOICE in
         echo " Will Not Restore Grub Theme. Do Manually "
         echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
-	    sleep 20
-	    cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-	    rm -Rf ~/.local/share/plasma/
-            cp -rf /etc/skel/. ~
-            sudo pacman -S latte-dock-git kvantum --noconfirm --needed
-            sudo rm /usr/share/defaultbg/XeroLinux.png
-            cd /usr/share/defaultbg/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero_iso/main/archiso/airootfs/usr/share/defaultbg/XeroLinux.png
-            sudo rm /etc/sddm.conf.d/kde_settings.conf
-            cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
-            sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
-            cd ~ && git clone https://github.com/xerolinux/default-grub.git
-            cd ~/default-grub/ && sudo ./install.sh
-            rm -rf ~/default-grub
+	      sleep 20
+	      cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
+	      rm -Rf ~/.local/share/plasma/
+              cp -rf /etc/skel/. ~
+              sudo pacman -S latte-dock-git kvantum --noconfirm --needed
+              sudo rm /usr/share/defaultbg/XeroLinux.png
+              cd /usr/share/defaultbg/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero_iso/main/archiso/airootfs/usr/share/defaultbg/XeroLinux.png
+              sudo rm /etc/sddm.conf.d/kde_settings.conf
+              cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero_iso/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
+              sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
+              cd ~ && git clone https://github.com/xerolinux/default-grub.git
+              cd ~/default-grub/ && sudo ./install.sh
+              rm -rf ~/default-grub
       echo "#######################################"
       echo "        Restore Done, Rebooting        "
       echo "#######################################"
