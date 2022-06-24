@@ -43,18 +43,18 @@ case $CHOICE in
       echo "Careful, This will Undo All Your Settings!"
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
-			sleep 20
-			sudo rm /etc/sddm.conf.d/kde_settings.conf
-			cd $HOME && git clone https://github.com/xerolinux/xero-cherry-git.git && cd ~/xero-cherry-git/
-			chmod +x ~/xero-cherry-git/install.sh && sh ~/xero-cherry-git/install.sh
-			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
-			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
-			sed -i "s/{C1}/{C4}/g" ~/XeroAscii
-			rm -rf ~/xero-*-git/
+	    sleep 20
+	    sudo rm /etc/sddm.conf.d/kde_settings.conf
+	    cd $HOME && git clone https://github.com/xerolinux/xero-cherry-git.git && cd ~/xero-cherry-git/
+	    chmod +x ~/xero-cherry-git/install.sh && sh ~/xero-cherry-git/install.sh
+	    sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
+	    sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
+	    sed -i "s/{C1}/{C4}/g" ~/XeroAscii
+	    rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
-			reboot
+	    reboot
       ;;
 
     2 )
@@ -64,18 +64,18 @@ case $CHOICE in
       echo "Careful, This will Undo All Your Settings!"
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
-			sleep 20
-			sudo rm /etc/sddm.conf.d/kde_settings.conf
-			cd $HOME && git clone https://github.com/xerolinux/xero-layan-git.git && cd ~/xero-layan-git/
-			chmod +x ~/xero-layan-git/install.sh && sh ~/xero-layan-git/install.sh
-			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
-			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
-			sed -i "s/{C4}/{C1}/g" ~/XeroAscii
-			rm -rf ~/xero-*-git/
+	    sleep 20
+	    sudo rm /etc/sddm.conf.d/kde_settings.conf
+	    cd $HOME && git clone https://github.com/xerolinux/xero-layan-git.git && cd ~/xero-layan-git/
+	    chmod +x ~/xero-layan-git/install.sh && sh ~/xero-layan-git/install.sh
+	    sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
+	    sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
+	    sed -i "s/{C4}/{C1}/g" ~/XeroAscii
+	    rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
-			reboot
+	    reboot
       ;;
 
     3 )
@@ -86,21 +86,21 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
             sleep 20
-			sudo rm /etc/sddm.conf.d/kde_settings.conf
-			cd $HOME && git clone https://github.com/xerolinux/xero-nord-git.git && cd ~/xero-nord-git/
-			chmod +x ~/xero-nord-git/install.sh && sh ~/xero-nord-git/install.sh
-			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
-			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
-			sed -i "s/{C4}/{C1}/g" ~/XeroAscii
-			rm -rf ~/xero-*-git/
+	    sudo rm /etc/sddm.conf.d/kde_settings.conf
+	    cd $HOME && git clone https://github.com/xerolinux/xero-nord-git.git && cd ~/xero-nord-git/
+	    chmod +x ~/xero-nord-git/install.sh && sh ~/xero-nord-git/install.sh
+	    sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
+	    sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
+	    sed -i "s/{C4}/{C1}/g" ~/XeroAscii
+	    rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
-			reboot
+	    reboot
       ;;
 
     4 )
-	  echo
+	echo
         echo "##########################################"
         echo "        Installing Xero Sweet Rice        "
         echo "Careful, This will Undo All Your Settings!"
@@ -117,7 +117,7 @@ case $CHOICE in
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
-			reboot
+	    reboot
       ;;
 
       5 )
@@ -128,9 +128,9 @@ case $CHOICE in
         echo " Will Not Restore Grub Theme. Do Manually "
         echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
-			sleep 20
-			cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-			rm -Rf ~/.local/share/plasma/
+	    sleep 20
+	    cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
+	    rm -Rf ~/.local/share/plasma/
             cp -rf /etc/skel/. ~
             sudo pacman -S latte-dock-git kvantum --noconfirm --needed
             sudo rm /usr/share/defaultbg/XeroLinux.png
@@ -141,10 +141,10 @@ case $CHOICE in
             cd ~ && git clone https://github.com/xerolinux/default-grub.git
             cd ~/default-grub/ && sudo ./install.sh
             rm -rf ~/default-grub
-	  echo "#######################################"
+      echo "#######################################"
       echo "        Restore Done, Rebooting        "
       echo "#######################################"
-			reboot
+	    reboot
       ;;
 
     6 )
