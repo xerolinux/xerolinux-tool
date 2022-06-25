@@ -4,7 +4,7 @@ echo "#################################"
 echo " Adding/Enabling Wayland Support "
 echo "#################################"
 sleep 3
-sudo pacman -S --noconfirm --needed egl-wayland xorg-xwayland kwayland-server kwayland-integration plasma-wayland-session plasma-wayland-protocols qt6-wayland
+sudo pacman -S --noconfirm --needed egl-wayland xorg-xwayland kwin kwayland-integration plasma-wayland-session plasma-wayland-protocols qt6-wayland
 sleep 3
 echo "#################################"
 echo "      Done! Will Reboot Now      "
