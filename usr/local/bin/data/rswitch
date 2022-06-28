@@ -45,7 +45,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sleep 20
-			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-dunes-git.git && cd ~/xero-dunes-git/
 			chmod +x ~/xero-dunes-git/install.sh && sh ~/xero-dunes-git/install.sh
 			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
@@ -64,7 +63,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sleep 20
-			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-cherry-git.git && cd ~/xero-cherry-git/
 			chmod +x ~/xero-cherry-git/install.sh && sh ~/xero-cherry-git/install.sh
 			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
@@ -85,7 +83,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
 			sleep 20
-			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-layan-git.git && cd ~/xero-layan-git/
 			chmod +x ~/xero-layan-git/install.sh && sh ~/xero-layan-git/install.sh
 			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
@@ -105,7 +102,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
             sleep 20
-			sudo rm /etc/sddm.conf.d/kde_settings.conf
 			cd $HOME && git clone https://github.com/xerolinux/xero-nord-git.git && cd ~/xero-nord-git/
 			chmod +x ~/xero-nord-git/install.sh && sh ~/xero-nord-git/install.sh
 			sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
@@ -125,7 +121,6 @@ case $CHOICE in
       echo "You have 20 seconds to cancel with ctrl+c "
       echo "##########################################"
             sleep 20
-            sudo rm /etc/sddm.conf.d/kde_settings.conf
             cd $HOME && git clone https://github.com/xerolinux/xero-sweet-git.git && cd ~/xero-sweet-git/
             chmod +x ~/xero-sweet-git/install.sh && sh ~/xero-sweet-git/install.sh
             sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
