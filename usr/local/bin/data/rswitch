@@ -67,7 +67,7 @@ case $CHOICE in
 			cd $HOME && git clone https://github.com/xerolinux/xero-cherry-git.git && cd ~/xero-cherry-git/
 			chmod +x ~/xero-cherry-git/install.sh && sh ~/xero-cherry-git/install.sh
 			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
-			sed -i "s/{.*}/{C4}/g" ~/XeroAscii
+			sed -i "s/{.*}/{C1}/g" ~/XeroAscii
 			rm -rf ~/xero-*-git/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
