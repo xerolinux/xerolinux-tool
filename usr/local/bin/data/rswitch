@@ -49,6 +49,7 @@ case $CHOICE in
 			chmod +x ~/xero-dunes-git/install.sh && sh ~/xero-dunes-git/install.sh
 			sed -i "s/#image_source/image_source/g" ~/.config/neofetch/config.conf
 			rm -rf ~/xero-*-git/
+			rm -rf ~/LightlyShaders/
       echo "#######################################"
       echo "    New Rice has been set Rebooting    "
       echo "#######################################"
