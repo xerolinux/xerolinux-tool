@@ -4,11 +4,11 @@ echo "#################################"
 echo "     Updating Mirrorlist Now     "
 echo "#################################"
 echo
-cd /etc/ && sudo rm pacman.conf
+sudo mv /etc/pacman.conf /etc/pacman.conf.backup
 cd /etc/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/pacman.conf
 sleep 2
 cd /etc/pacman.d/ && sudo rm xero-mirrorlist
-cd /etc/pacman.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/xerolinux-mirrorlist/main/etc/pacman.d/xero-mirrorlist
+sudo pacman -S xerolinux-mirrorlist
 sleep 3
 echo "#################################"
 echo "      Updating Done! Exit Me     "
