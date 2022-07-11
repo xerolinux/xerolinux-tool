@@ -7,9 +7,9 @@ echo
 sudo mv /etc/pacman.conf /etc/pacman.conf.backup
 cd /etc/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/pacman.conf
 sleep 2
-sudo rm /etc/pacman.d/xero-mirrorlist
-cd ~ && wget https://github.com/xerolinux/xerolinux_repo/raw/main/x86_64/xerolinux-mirrorlist-0.1.2-2-any.pkg.tar.zst
-cd ~ && sudo pacman -U --noconfirm xerolinux-mirrorlist-*.pkg.tar.zst
+cd ~ && sudo rm /etc/pacman.d/xero-mirrorlist
+wget https://github.com/xerolinux/xerolinux_repo/raw/main/x86_64/xerolinux-mirrorlist-0.1.2-2-any.pkg.tar.zst
+sudo pacman -U --noconfirm xerolinux-mirrorlist-*.pkg.tar.zst
 sleep 3
 echo "#################################"
 echo "      Updating Done! Exit Me     "
