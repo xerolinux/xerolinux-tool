@@ -9,7 +9,7 @@ cd /etc/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero-fixes/mai
 sleep 2
 sudo rm /etc/pacman.d/xero-mirrorlist
 cd /etc/pacman.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/xerolinux-mirrorlist/main/etc/pacman.d/xero-mirrorlist
-sudo pacman -S --noconfirm xerolinux-mirrorlist
+sudo pacman -Sy --noconfirm xerolinux-mirrorlist
 sleep 3
 echo "#################################"
 echo "      Updating Done! Exit Me     "
