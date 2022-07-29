@@ -9,7 +9,7 @@ echo "######################################"
 sudo pacman -Rdd --noconfirm qt6-3d qt6-svg qt6-base qt6-tools qt6-scxml qt6-lottie qt6-charts qt6-5compat qt6-sensors qt6-webview qt6-quick3d qt6-serialbus qt6-webengine qt6-datavis3d qt6-websockets qt6-webchannel qt6-serialport qt6-multimedia qt6-declarative qt6-shadertools qt6-positioning qt6-networkauth qt6-imageformats qt6-connectivity qt6-translations qt6-quicktimeline qt6-remoteobjects qt6-languageserver
 sleep 3
 echo
-echo " Step 1 - Removing QT5 Packages       "
+echo " Step 1 - Adding QT5 Packages       "
 echo "######################################"
 sudo pacman -S --noconfirm --needed qt5-3d qt5-svg qt5-base qt5-tools qt5-scxml qt5-lottie qt5-charts qt6-5compat qt5-sensors qt5-webview qt5-quick3d qt5-x11extras qt5 serialbus qt5-webengine qt5-datavis3d qt5-websockets qt5-webchannel qt5-serialport qt5-multimedia qt5-declarative qt5-networkauth qt5-xmlpatterns qt5-imageformats qt5-connectivity qt5-translations qt5-quicktimeline qt5-remoteobjects qt5-virtualkeyboard
 sleep 3
